@@ -1,0 +1,135 @@
+{       
+       "index": "pb_basic_phone",
+        "order":1,
+        "settings": {
+	              "number_of_shards" :8,  
+				  "number_of_replicas" : 1,
+		      	 "refresh_interval" : "10s"
+        },
+	"mappings": {
+          "pb_basic_phone": {
+	      "properties" : { 
+	            "id": {
+                    "type": "long"
+                }, 
+                "phone": {
+                    "type": "long"
+                },
+                "mbstatus": {
+                    "type": "byte"
+                },
+                "smsstatus": {
+                    "type": "byte"
+                },
+               "rmsst_a": {
+                    "type": "byte"
+                },
+                "rmsst_dla": {
+                    "type": "byte"
+                },
+                "rmsst_b": {
+                    "type": "byte"
+                },                
+                "rmsst_dlb": {
+                    "type": "byte"
+                },                          
+                 "rmsst_c": {
+                    "type": "byte"
+                },                 
+                 "rmsst_dlc": {
+                    "type": "byte"
+                },                                  
+                "createtm": {
+                    "type": "date",
+                     "format": "yyyy-MM-dd HH:mm:ss.SSSSSSS"
+                },
+                "lastupdatetm": {
+                    "type": "date",
+                     "format": "yyyy-MM-dd HH:mm:ss.SSSSSSS"
+                },
+                "lastdltm": {
+                    "type": "date",
+                     "format": "yyyy-MM-dd HH:mm:ss.SSSSSSS"
+                },
+                "lastrpttm": {
+                    "type": "date",
+                     "format": "yyyy-MM-dd HH:mm:ss.SSSSSSS"
+                },
+                "phoneos": {
+                    "type": "byte"
+                },
+                "osver": {
+                    "type": "keyword"
+                },
+                "brand": {
+                    "type": "text"
+                },
+                "model": {
+                    "type": "keyword"
+                },
+                "xbrowser": {
+                    "type": "keyword"
+                },
+                "imei": {
+                    "type": "keyword",
+                    "doc_values":false
+                },
+                "meid": {
+                    "type": "keyword"
+                },
+                "imsi": {
+                   "type": "keyword",
+                    "doc_values":false
+                },
+                 "resolution": {
+                   "type": "keyword"
+                },
+                 "sn": {
+                   "type": "keyword"
+                },
+                 "mac": {
+                    "type": "keyword",
+                    "doc_values":false
+                },
+                "sdkver": {
+                   "type": "keyword"
+                },
+                "isupflag": {
+                    "type": "byte"
+                },  
+				 "rptfreq": {
+                    "type": "integer"
+                },  
+                "rptway": {
+                    "type": "byte"
+                },  
+                "upsrc": {
+                    "type": "byte"
+                },
+                "mobilecountry": {
+                    "type": "integer"
+                },
+                "mobiletype":{
+                 	"type": "integer"
+                },
+                "mobilearea":{
+                	"type":"integer"
+                },
+                "imid":{
+                	"type":"keyword"
+                },
+                "imacount":{
+                	"type":"keyword"
+                }
+                ,
+                "sim_uid":{
+                	"type":"keyword"
+                }
+                ,
+                "dev_uid":{
+                	"type":"keyword"
+                }
+           }      
+      }  
+  }
+}
